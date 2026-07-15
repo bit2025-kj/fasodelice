@@ -324,7 +324,6 @@ p{ margin:.5rem 0; }
 .contact-list li{ display:flex; flex-direction:column; gap:.15rem; }
 .contact-label{ font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); }
 .contact-list a{ font-weight:700; color:var(--green); }
-.contact-soon{ color:var(--ink-soft); font-style:italic; font-size:.9rem; }
 .contact-card{ display:flex; justify-content:center; }
 .label-preview{ border-radius:var(--radius); box-shadow:var(--shadow); }
 
@@ -340,6 +339,15 @@ p{ margin:.5rem 0; }
 .footer-nav{ display:flex; gap:1.4rem; flex-wrap:wrap; }
 .footer-nav a{ font-size:.88rem; }
 .footer-nav a:hover{ color:var(--gold-soft); }
+
+.footer-social{ display:flex; gap:.8rem; }
+.social-link{
+  display:flex; align-items:center; justify-content:center;
+  width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.1);
+  transition:background .15s ease;
+}
+.social-link:hover{ background:var(--gold-soft); }
+.icon-social{ width:18px; height:18px; fill:#fff; }
 .footer-copy{ width:100%; text-align:center; font-size:.78rem; color:rgba(255,255,255,.6); margin-top:1.4rem; }
 
 /* ---------- Lightbox ---------- */
