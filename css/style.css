@@ -235,6 +235,7 @@ p{ margin:.5rem 0; }
 }
 .product-format{ color:var(--ink-soft); font-size:.85rem; margin-top:0; }
 .product-ingredients{ color:var(--ink-soft); font-size:.9rem; }
+.product-benefit{ color:var(--green); font-size:.85rem; font-weight:700; margin-top:.3rem; }
 .product-footer{
   display:flex; align-items:center; justify-content:space-between;
   margin-top:1rem; padding-top:1rem; border-top:1px solid var(--rule);

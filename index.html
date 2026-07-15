@@ -20,7 +20,7 @@
   "description": "Yaourt, yaourt grec, dêguê et pâtisserie artisanale, faits maison à Koudougou.",
   "image": "assets/generated/image-partage-og.webp",
   "telephone": "+22664700906",
-  "priceRange": "500 FCFA - 1500 FCFA",
+  "priceRange": "100 FCFA - 1250 FCFA",
   "founder": { "@type": "Person", "name": "Cherine Kagambega" },
   "sameAs": ["https://www.facebook.com/profile.php?id=100072398627058"],
   "address": {
@@ -164,6 +164,7 @@
           <h4>Yaourt Grec Nature</h4>
           <p class="product-format">Pot 300 ml</p>
           <p class="product-ingredients">Lait, crème fraîche, sucre vanillé.</p>
+          <p class="product-benefit">✓ Bon pour la santé</p>
           <div class="product-footer">
             <span class="price">1 000 FCFA</span>
             <div class="product-actions">
@@ -178,6 +179,7 @@
           <h4>Yaourt Grec Graines de Chia</h4>
           <p class="product-format">Pot 300 ml</p>
           <p class="product-ingredients">Lait, crème fraîche, graines de chia.</p>
+          <p class="product-benefit">✓ Aide à la perte de poids</p>
           <div class="product-footer">
             <span class="price">1 000 FCFA</span>
             <div class="product-actions">
@@ -192,10 +194,10 @@
           <p class="product-format">Pot 500 ml</p>
           <p class="product-ingredients">Lait, sucre, sucre vanillé.</p>
           <div class="product-footer">
-            <span class="price">1 000 FCFA</span>
+            <span class="price">1 250 FCFA</span>
             <div class="product-actions">
-              <button type="button" class="btn-add-cart" data-id="ys" data-name="Yaourt Simple (500ml)" data-price="1000">+ Panier</button>
-              <a class="btn-order" data-product="Yaourt Simple (500ml) — 1000 FCFA" href="#">Commander</a>
+              <button type="button" class="btn-add-cart" data-id="ys" data-name="Yaourt Simple (500ml)" data-price="1250">+ Panier</button>
+              <a class="btn-order" data-product="Yaourt Simple (500ml) — 1250 FCFA" href="#">Commander</a>
             </div>
           </div>
         </article>
@@ -246,34 +248,48 @@
           <h4>Cake Simple</h4>
           <p class="product-ingredients">Farine, œufs, beurre, sucre, yaourt, levure chimique, sucre vanillé.</p>
           <div class="product-footer">
-            <span class="price">Dès 100 FCFA</span>
+            <span class="price">100 FCFA</span>
             <div class="product-actions">
-              <button type="button" class="btn-add-cart" data-id="cs" data-name="Cake Simple (part)" data-price="100" data-estimate="true">+ Panier</button>
-              <a class="btn-order" data-product="Cake Simple" href="#">Commander</a>
+              <button type="button" class="btn-add-cart" data-id="cs" data-name="Cake Simple" data-price="100">+ Panier</button>
+              <a class="btn-order" data-product="Cake Simple — 100 FCFA" href="#">Commander</a>
             </div>
           </div>
         </article>
 
         <article class="product-card">
           <h4>Cake Marbré</h4>
+          <div class="variant-select-wrap">
+            <label class="variant-label" for="format-cm">Taille</label>
+            <select id="format-cm" class="format-select" data-id="cm" data-name="Cake Marbré">
+              <option value="Petit|500">Petit — 500 FCFA</option>
+              <option value="Grand|1000">Grand — 1 000 FCFA</option>
+            </select>
+          </div>
           <p class="product-ingredients">Farine, œufs, beurre, sucre, yaourt, levure chimique, sucre vanillé, poudre de cacao, chocolat.</p>
           <div class="product-footer">
-            <span class="price">Dès 100 FCFA</span>
+            <span class="price price-variant" data-price-display="cm">500 FCFA</span>
             <div class="product-actions">
-              <button type="button" class="btn-add-cart" data-id="cm" data-name="Cake Marbré (part)" data-price="100" data-estimate="true">+ Panier</button>
-              <a class="btn-order" data-product="Cake Marbré" href="#">Commander</a>
+              <button type="button" class="btn-add-cart" data-id="cm" data-variant="true">+ Panier</button>
+              <a class="btn-order" data-product="Cake Marbré — 500 FCFA (petit) ou 1000 FCFA (grand)" href="#">Commander</a>
             </div>
           </div>
         </article>
 
         <article class="product-card">
           <h4>Cake au Citron</h4>
+          <div class="variant-select-wrap">
+            <label class="variant-label" for="format-cc">Taille</label>
+            <select id="format-cc" class="format-select" data-id="cc" data-name="Cake au Citron">
+              <option value="Petit|500">Petit — 500 FCFA</option>
+              <option value="Grand|1000">Grand — 1 000 FCFA</option>
+            </select>
+          </div>
           <p class="product-ingredients">Farine, œufs, beurre, sucre, yaourt, levure chimique, sucre vanillé, jus et zeste de citron.</p>
           <div class="product-footer">
-            <span class="price">Dès 100 FCFA</span>
+            <span class="price price-variant" data-price-display="cc">500 FCFA</span>
             <div class="product-actions">
-              <button type="button" class="btn-add-cart" data-id="cc" data-name="Cake au Citron (part)" data-price="100" data-estimate="true">+ Panier</button>
-              <a class="btn-order" data-product="Cake au Citron" href="#">Commander</a>
+              <button type="button" class="btn-add-cart" data-id="cc" data-variant="true">+ Panier</button>
+              <a class="btn-order" data-product="Cake au Citron — 500 FCFA (petit) ou 1000 FCFA (grand)" href="#">Commander</a>
             </div>
           </div>
         </article>
@@ -480,7 +496,7 @@
   </div>
 
   <div class="cart-footer" id="cart-footer" hidden>
-    <p class="cart-note">Total estimé — les pâtisseries à la part sont ajustées selon la taille finale.</p>
+    <p class="cart-note">Vérifiez bien les tailles choisies avant de valider votre commande.</p>
     <div class="cart-total">
       <span>Total estimé</span>
       <span id="cart-total-value">0 FCFA</span>
